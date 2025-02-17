@@ -14,6 +14,5 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
         return;
     }
 
-    alert("Booking successful! Redirecting...");
     window.location.href = "confirmation.html";
 });
