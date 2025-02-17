@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Once Upon a Seam | Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Once Upon a Seam</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="designers.html">Designers</a></li>
+                <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary me-2" href="client-info.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="booking.html">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h1 class="hero-title">Your design vision starts here</h1>
+                <p class="hero-description">
+                    At Once Upon a Seam, we are passionate about creating enchanting custom designs, 
+                    tailoring, and styling services that bring dreams to life. Specializing in bespoke gowns 
+                    for weddings, special events, and fairytale moments, we combine exceptional craftsmanship 
+                    with personalized care to turn your vision into reality.
+                </p>
+                <div>
+                    <a href="contact.html" class="btn btn-outline-dark me-2">Contact Us</a>
+                    <a href="services.html" class="btn btn-outline-dark">See how it works</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="assets/images/pink_gown.jpg" class="img-fluid rounded shadow" alt="Custom Gown">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center py-4">
+    <p>&copy; 2025 Once Upon a Seam. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let navbar = document.querySelector(".navbar");
+        let heroSection = document.querySelector(".hero-section");
+
+        if (navbar && heroSection) {
+            let navbarHeight = navbar.offsetHeight;
+            heroSection.style.marginTop = navbarHeight + "px";
+        }
+    });
+</script>
+
+</body>
+</html>
